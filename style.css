@@ -14,3 +14,4 @@ main{max-width:720px;margin:0 auto;padding:0 1rem 3rem}
 .empty span{font-size:3rem;display:block}
 footer{text-align:center;color:var(--muted);font-size:.8rem;padding:2rem}
 .mascot{width:min(260px,60vw);aspect-ratio:1;object-fit:cover;border-radius:50%;display:block;margin:0 auto 1rem}
+.countdown{text-align:center;margin:0 auto 2.5rem;max-width:900px;padding:0 1rem}.bubble{width:100%;max-width:720px;border-radius:16px}.countdown h2{color:#ff2a2a;text-transform:uppercase;letter-spacing:.05em;margin:1rem 0 .25rem}.cd{color:#ff2a2a;font-size:clamp(4rem,18vw,9rem);font-weight:900;line-height:1;text-shadow:0 0 18px rgba(255,0,0,.6)}.cdsub{color:#ff2a2a;font-family:monospace;font-size:1.2rem;opacity:.85}
