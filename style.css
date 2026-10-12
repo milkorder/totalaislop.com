@@ -29,3 +29,8 @@ footer{text-align:center;color:var(--muted);font-size:.8rem;padding:2rem}
 .badnews li:first-child{border-top:0}.badnews a{color:inherit;font-weight:700;text-decoration:none}.badnews a:hover{color:#ff2a2a}
 .badnews li span{display:block;font-size:.8rem;opacity:.6}.badnews .none{opacity:.6;font-style:italic}
 @media(max-width:860px){.layout{grid-template-columns:1fr}.sidebar{position:static;order:-1}}
+.layout{grid-template-columns:280px minmax(0,1fr) 340px;max-width:1400px}
+.slopcol h3{margin:0 0 .75rem;color:#7CFC00;text-transform:uppercase;letter-spacing:.08em}
+.slopcol .post h2{font-size:1.05rem}.slopcol .none{opacity:.6;font-style:italic}
+@media(max-width:1100px){.layout{grid-template-columns:minmax(0,1fr) 320px}.slopcol{grid-column:1/-1;order:2}}
+@media(max-width:860px){.layout{grid-template-columns:1fr}.slopcol{order:1}}
