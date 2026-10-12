@@ -17,3 +17,15 @@ footer{text-align:center;color:var(--muted);font-size:.8rem;padding:2rem}
 .countdown{text-align:center;margin:0 auto 2.5rem;max-width:900px;padding:0 1rem}.bubble{width:100%;max-width:720px;border-radius:16px}.countdown h2{color:#ff2a2a;text-transform:uppercase;letter-spacing:.05em;margin:1rem 0 .25rem}.cd{color:#ff2a2a;font-size:clamp(4rem,18vw,9rem);font-weight:900;line-height:1;text-shadow:0 0 18px rgba(255,0,0,.6)}.cdsub{color:#ff2a2a;font-family:monospace;font-size:1.2rem;opacity:.85}
 .cdwrap{width:100%;max-width:720px;margin:0 auto;display:flex;align-items:baseline;justify-content:center;gap:.25em;color:#ff2a2a;font-weight:900;line-height:1;font-size:clamp(4rem,19vw,10.5rem);text-shadow:0 0 18px rgba(255,0,0,.6)}.cdwrap .cd{font-size:1em}.cdunit{font-size:.6em}.cdsub{max-width:720px;margin:0 auto}
 .cdtail{max-width:720px;margin:.2rem auto 0;color:#ff2a2a;font-weight:900;text-transform:uppercase;font-size:clamp(1.4rem,5.5vw,3rem);letter-spacing:.03em;text-shadow:0 0 12px rgba(255,0,0,.5)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:2rem;max-width:1200px;margin:0 auto;padding:0 1rem;align-items:start}
+.layout main{max-width:none;margin:0;padding:0}
+.sidebar{position:sticky;top:1rem}
+.sidebar .countdown{margin:0 0 1.5rem;padding:0;max-width:none}
+.sidebar .bubble,.sidebar .cdwrap,.sidebar .cdtail,.sidebar .cdsub{max-width:100%}
+.sidebar .cdwrap{font-size:5.2rem}.sidebar .cdtail{font-size:1.35rem}
+.badnews{border:2px solid #ff2a2a;border-radius:12px;padding:1rem}
+.badnews h3{margin:0 0 .5rem;color:#ff2a2a;text-transform:uppercase;letter-spacing:.08em}
+.badnews ul{list-style:none;margin:0;padding:0}.badnews li{padding:.5rem 0;border-top:1px solid rgba(255,42,42,.25)}
+.badnews li:first-child{border-top:0}.badnews a{color:inherit;font-weight:700;text-decoration:none}.badnews a:hover{color:#ff2a2a}
+.badnews li span{display:block;font-size:.8rem;opacity:.6}.badnews .none{opacity:.6;font-style:italic}
+@media(max-width:860px){.layout{grid-template-columns:1fr}.sidebar{position:static;order:-1}}

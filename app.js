@@ -5,6 +5,8 @@
   fetch('posts.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(posts){
     if(!Array.isArray(posts)||!posts.length){empty('First slop coming soon. The bots are still warming up.');return;}
     posts.sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
+    var bad=posts.filter(function(p){return p.bad;});var bl=document.getElementById('bad');
+    if(bad.length)bl.innerHTML=bad.map(function(p){var u=/^https?:\/\//.test(p.url||'')?p.url:'#';return '<li><a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a><span>'+esc(p.date)+'</span></li>';}).join('');
     el.innerHTML=posts.map(function(p){
       var url=/^https?:\/\//.test(p.url||'')?p.url:'#';
       return '<article class="post"><div class="meta">'+esc(p.date)+(p.source?' &middot; '+esc(p.source):'')+'</div>'+
