@@ -34,3 +34,13 @@ footer{text-align:center;color:var(--muted);font-size:.8rem;padding:2rem}
 .slopcol .post h2{font-size:1.05rem}.slopcol .none{opacity:.6;font-style:italic}
 @media(max-width:1100px){.layout{grid-template-columns:minmax(0,1fr) 320px}.slopcol{grid-column:1/-1;order:2}}
 @media(max-width:860px){.layout{grid-template-columns:1fr}.slopcol{order:1}}
+.gate{position:fixed;inset:0;z-index:999;background:rgba(5,5,8,.92);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:1rem}
+.gate[hidden]{display:none}
+.gatebox{max-width:520px;width:100%;background:#111;border:3px solid #ff2a2a;border-radius:18px;padding:2rem 1.5rem;text-align:center;box-shadow:0 0 40px rgba(255,42,42,.4)}
+.gatestar{width:120px;height:120px;object-fit:cover;border-radius:50%}
+.gatebox h2{color:#ff2a2a;margin:.75rem 0;letter-spacing:.04em}
+.gatebig{font-size:1.4rem;font-weight:900;color:#7CFC00}
+.gatefine{font-size:.85rem;opacity:.6;font-style:italic}
+.gatebtns{display:flex;flex-direction:column;gap:.6rem;margin-top:1.25rem}
+.gatebtns button{background:#ff2a2a;color:#fff;border:0;border-radius:10px;padding:.9rem;font-size:1.1rem;font-weight:800;cursor:pointer}
+.gatebtns button:hover{background:#ff5050}.gatebtns a{color:#aaa;font-size:.95rem}

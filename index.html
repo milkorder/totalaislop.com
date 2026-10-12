@@ -5,9 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TOTALaiSLOP</title>
 <meta name="description" content="AI news, a little sloppy.">
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
+<div id="gate" class="gate" role="dialog" aria-modal="true" aria-labelledby="gateh" hidden>
+  <div class="gatebox">
+    <img src="slopstar.jpg?v=2" alt="SlopStar" class="gatestar">
+    <h2 id="gateh">&#9888; WARNING: SLOP AHEAD &#9888;</h2>
+    <p>The content on this site is <b>AI generated</b>. It is not to be taken seriously and <b>may not be true</b>.</p>
+    <p class="gatebig">Guaranteed sloppy AI.<br>Consume at your own risk.</p>
+    <p class="gatefine">Hand-picked slop &middot; no warranty, express or hallucinated</p>
+    <div class="gatebtns"><button id="gateyes">I accept the slop. Enter</button><a id="gateno" href="https://www.google.com">Get me out of here</a></div>
+  </div>
+</div>
+<script>
+(function(){var g=document.getElementById("gate");try{if(localStorage.getItem("slopOK")==="1")return}catch(e){}
+g.hidden=false;document.body.style.overflow="hidden";
+document.getElementById("gateyes").onclick=function(){try{localStorage.setItem("slopOK","1")}catch(e){}g.hidden=true;document.body.style.overflow="";};})();
+</script>
 <header>
   <img class="mascot" src="slopstar.jpg?v=2" alt="SlopStar, the TOTALaiSLOP mascot">
   <h1>TOTALaiSLOP</h1>
@@ -35,6 +50,6 @@ function u(){var d=t-Date.now();if(d<=0){cd.textContent="POP!";document.querySel
 var D=Math.floor(d/864e5),h=Math.floor(d%864e5/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);
 cd.textContent=D;cdsub.textContent=h+"h "+m+"m "+s+"s";}u();setInterval(u,1000);})();
 </script>
-<script src="app.js?v=9"></script>
+<script src="app.js?v=10"></script>
 </body>
 </html>
