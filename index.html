@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TOTALaiSLOP</title>
 <meta name="description" content="AI news, a little sloppy.">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 <header>
@@ -14,12 +14,7 @@
   <p class="tagline">AI news, a little sloppy. Served fresh-ish, daily.</p>
 </header>
 
-<script>
-(function(){var t=new Date("2027-04-11T00:00:00-08:00").getTime();
-function u(){var d=t-Date.now();if(d<=0){cd.textContent="POP!";document.querySelector(".cdunit").textContent="";document.querySelector(".cdtail").textContent="";cdsub.textContent="";return}
-var D=Math.ceil(d/864e5),h=Math.floor(d%864e5/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);
-cd.textContent=D;cdsub.textContent=h+"h "+m+"m "+s+"s";}u();setInterval(u,1000);})();
-</script>
+
 <div class="layout">
 <section class="slopcol"><h3>Sloppy AI</h3><div id="slop"></div></section>
 <main id="posts" aria-live="polite"></main>
@@ -34,6 +29,12 @@ cd.textContent=D;cdsub.textContent=h+"h "+m+"m "+s+"s";}u();setInterval(u,1000);
 </aside>
 </div>
 <footer>Hand-picked slop &middot; no warranty, express or hallucinated</footer>
-<script src="app.js?v=7"></script>
+<script>
+(function(){var cd=document.getElementById("cd"),cdsub=document.getElementById("cdsub");var t=new Date("2027-04-11T00:00:00-08:00").getTime();
+function u(){var d=t-Date.now();if(d<=0){cd.textContent="POP!";document.querySelector(".cdunit").textContent="";document.querySelector(".cdtail").textContent="";cdsub.textContent="";return}
+var D=Math.ceil(d/864e5),h=Math.floor(d%864e5/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);
+cd.textContent=D;cdsub.textContent=h+"h "+m+"m "+s+"s";}u();setInterval(u,1000);})();
+</script>
+<script src="app.js?v=8"></script>
 </body>
 </html>
