@@ -1,0 +1,14 @@
+(function(){
+  var el=document.getElementById('posts');
+  function esc(s){var d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML;}
+  function empty(msg){el.innerHTML='<div class="empty"><span>🫠</span>'+msg+'</div>';}
+  fetch('posts.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(posts){
+    if(!Array.isArray(posts)||!posts.length){empty('First slop coming soon. The bots are still warming up.');return;}
+    posts.sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
+    el.innerHTML=posts.map(function(p){
+      var url=/^https?:\/\//.test(p.url||'')?p.url:'#';
+      return '<article class="post"><div class="meta">'+esc(p.date)+(p.source?' &middot; '+esc(p.source):'')+'</div>'+
+        '<h2><a href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a></h2><p>'+esc(p.blurb)+'</p></article>';
+    }).join('');
+  }).catch(function(){empty('The slop machine jammed. Try again later.');});
+})();

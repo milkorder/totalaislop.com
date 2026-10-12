@@ -1,0 +1,15 @@
+:root{--bg:#0d0d12;--card:#17171f;--fg:#e8e6f0;--muted:#8d8aa0;--accent:#7CFC00;--accent2:#ff4fd8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+header{text-align:center;padding:3rem 1rem 2rem}
+h1{font-size:clamp(2.5rem,9vw,5rem);margin:0;letter-spacing:.02em;color:var(--accent);text-shadow:3px 3px 0 var(--accent2);transform:rotate(-1.5deg)}
+.tagline{color:var(--muted);font-style:italic;margin-top:1rem}
+main{max-width:720px;margin:0 auto;padding:0 1rem 3rem}
+.post{background:var(--card);border-left:4px solid var(--accent2);border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}
+.post:nth-child(even){transform:rotate(.4deg)}.post:nth-child(odd){transform:rotate(-.3deg)}
+.post h2{margin:.2rem 0;font-size:1.25rem}
+.post h2 a{color:var(--fg);text-decoration:none}.post h2 a:hover{color:var(--accent)}
+.meta{color:var(--muted);font-size:.85rem}
+.empty{text-align:center;padding:3rem 1rem;color:var(--muted);font-size:1.2rem}
+.empty span{font-size:3rem;display:block}
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:2rem}
