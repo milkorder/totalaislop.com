@@ -13,3 +13,4 @@ main{max-width:720px;margin:0 auto;padding:0 1rem 3rem}
 .empty{text-align:center;padding:3rem 1rem;color:var(--muted);font-size:1.2rem}
 .empty span{font-size:3rem;display:block}
 footer{text-align:center;color:var(--muted);font-size:.8rem;padding:2rem}
+.mascot{width:min(260px,60vw);aspect-ratio:1;object-fit:cover;border-radius:50%;display:block;margin:0 auto 1rem}
