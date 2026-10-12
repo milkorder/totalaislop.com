@@ -16,12 +16,12 @@
 <section class="countdown">
   <img class="bubble" src="bubble.jpg?v=1" alt="SlopStar popping the AI bubble with a needle">
   <h2>Days until the AI bubble pops</h2>
-  <div id="cd" class="cd">181</div>
+  <div class="cdwrap"><span id="cd" class="cd">181</span><span class="cdunit">days</span></div>
   <div id="cdsub" class="cdsub"></div>
 </section>
 <script>
 (function(){var t=new Date("2027-04-11T00:00:00-08:00").getTime();
-function u(){var d=t-Date.now();if(d<=0){cd.textContent="POP!";cdsub.textContent="";return}
+function u(){var d=t-Date.now();if(d<=0){cd.textContent="POP!";document.querySelector(".cdunit").textContent="";cdsub.textContent="";return}
 var D=Math.ceil(d/864e5),h=Math.floor(d%864e5/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);
 cd.textContent=D;cdsub.textContent=h+"h "+m+"m "+s+"s";}u();setInterval(u,1000);})();
 </script>
